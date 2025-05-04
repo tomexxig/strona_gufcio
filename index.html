@@ -3,73 +3,119 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gufcio.pl - Serwer Minecraft</title>
+  <title>Gufcio.pl – Serwer Minecraft</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: #121212;
-      color: white;
+      background: #0e0e0e;
+      color: #fff;
       text-align: center;
     }
+
     header {
-      padding: 60px 20px 20px;
-      background: linear-gradient(#1f1f1f, #121212);
+      padding: 80px 20px 40px;
+      background: linear-gradient(145deg, #1a1a1a, #111);
     }
+
     h1 {
-      font-size: 3em;
-      margin: 0;
+      font-size: 3.2em;
+      margin: 0 0 10px;
+      color: #4caf50;
     }
+
     p {
       font-size: 1.2em;
-      margin: 10px 0 30px;
+      color: #ccc;
+      margin-bottom: 30px;
     }
-    .ip {
-      background: #333;
-      padding: 15px;
-      border-radius: 10px;
+
+    .ip-box {
       display: inline-block;
+      background: #222;
+      padding: 15px 25px;
+      border-radius: 10px;
       font-size: 1.2em;
       margin-bottom: 20px;
+      box-shadow: 0 0 10px #4caf50;
     }
+
     .buttons {
-      margin-top: 20px;
+      margin-top: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
     }
+
     .buttons a {
-      display: inline-block;
-      margin: 10px;
-      padding: 12px 25px;
+      padding: 14px 30px;
       background: #4caf50;
-      color: white;
       border-radius: 8px;
       text-decoration: none;
-      transition: background 0.3s;
+      color: white;
+      font-weight: bold;
+      transition: 0.3s;
     }
+
     .buttons a:hover {
       background: #45a045;
+      transform: scale(1.05);
     }
+
     footer {
-      margin-top: 60px;
+      padding: 40px 20px;
       font-size: 0.9em;
-      color: #aaa;
-      padding-bottom: 20px;
+      color: #888;
+      background: #101010;
+      margin-top: 60px;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.2em;
+      }
+      .ip-box {
+        font-size: 1em;
+      }
+      .buttons a {
+        padding: 12px 20px;
+        font-size: 0.95em;
+      }
+    }
+
+    /* Przekierowanie do sklepu */
+    .redirect {
+      display: none;
     }
   </style>
+
+  <!-- Przekierowanie do sklepu -->
+  <meta http-equiv="refresh" content="0; URL='https://sklep.gufcio.pl'" />
 </head>
 <body>
   <header>
     <h1>Gufcio.pl</h1>
-    <p>Dołącz do najlepszego serwera Minecraft!</p>
-    <div class="ip">IP: mc.gufcio.pl</div>
+    <p>Dołącz do najlepszego serwera Minecraft 1.21.5!</p>
+    <div class="ip-box">IP: <strong>mc.gufcio.pl</strong></div>
+
     <div class="buttons">
-      <a href="https://discord.com/channels/1368302391681880105/1368386075470598205" target="_blank">Dołącz na Discord</a>
-      <a href="/regulamin.html">Zobacz regulamin</a>
-      <a href="https://topka.pl/gufcio" target="_blank">Głosuj na serwer</a>
+      <a href="https://discord.gg/1368302391681880105" target="_blank">Discord</a>
+      <a href="https://sklep.gufcio.pl" target="_blank">Sklep</a>
+      <a href="https://topka.pl/gufcio" target="_blank">Głosuj</a>
+      <a href="/regulamin.html">Regulamin</a>
     </div>
   </header>
 
   <footer>
     &copy; 2025 Gufcio.pl – Wszystkie prawa zastrzeżone.
   </footer>
+
+  <!-- Ukryty div dla przekierowania -->
+  <div class="redirect"></div>
 </body>
 </html>
