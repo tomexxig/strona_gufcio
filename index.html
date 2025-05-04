@@ -44,31 +44,27 @@
       box-shadow: 0 0 10px #4caf50;
     }
 
-    /* Pasek nawigacyjny */
-    nav {
-      background: #333;
-      padding: 10px 0;
-    }
-
-    nav a {
-      padding: 14px 30px;
-      text-decoration: none;
-      color: white;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    nav a:hover {
-      background: #45a045;
-      transform: scale(1.05);
-    }
-
     .buttons {
       margin-top: 30px;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 15px;
+    }
+
+    .buttons a {
+      padding: 14px 30px;
+      background: #4caf50;
+      border-radius: 8px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .buttons a:hover {
+      background: #45a045;
+      transform: scale(1.05);
     }
 
     footer {
@@ -86,7 +82,7 @@
       .ip-box {
         font-size: 1em;
       }
-      nav a {
+      .buttons a {
         padding: 12px 20px;
         font-size: 0.95em;
       }
@@ -94,29 +90,20 @@
   </style>
 </head>
 <body>
-  <!-- Pasek nawigacyjny -->
-  <nav>
-    <a href="#home">Strona Główna</a>
-    <a href="#discord">Discord</a>
-    <a href="#shop">Sklep</a>
-    <a href="#vote">Głosuj</a>
-    <a href="#rules">Regulamin</a>
-  </nav>
-
-  <header id="home">
+  <header>
     <h1>Gufcio.pl</h1>
     <p>Dołącz do najlepszego serwera Minecraft 1.21.5!</p>
     <div class="ip-box">IP: <strong>mc.gufcio.pl</strong></div>
 
     <div class="buttons">
-      <a href="https://discord.gg/1368302391681880105" target="_blank">Dołącz na Discord</a>
-      <a href="https://sklep.gufcio.pl" target="_blank">Sklep</a>
+      <a href="https://discord.gg/1368302391681880105" target="_blank">Discord</a>
+      <a href="https://sklep.gufcio.pl" target="_blank">Sklep</a> <!-- Link do sklepu CraftingStore -->
       <a href="https://topka.pl/gufcio" target="_blank">Głosuj</a>
       <a href="/regulamin.html">Regulamin</a>
     </div>
   </header>
 
-  <footer id="rules">
+  <footer>
     &copy; 2025 Gufcio.pl – Wszystkie prawa zastrzeżone.
   </footer>
 </body>
