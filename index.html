@@ -1,110 +1,143 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gufcio.pl – Serwer Minecraft</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arena PvP - Oficjalna Strona</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #0e0e0e;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #1a1a1a;
       color: #fff;
-      text-align: center;
+      background-image: url('https://www.minecraftskins.com/uploads/skins/large/c-1697034748.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
     }
 
     header {
-      padding: 80px 20px 40px;
-      background: linear-gradient(145deg, #1a1a1a, #111);
+      background-color: rgba(0, 0, 0, 0.75);
+      padding: 20px 0;
+      text-align: center;
+      border-bottom: 3px solid #32CD32;
+      box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
     }
 
-    h1 {
-      font-size: 3.2em;
-      margin: 0 0 10px;
-      color: #4caf50;
+    header h1 {
+      font-size: 28px;
+      color: #32CD32;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-shadow: 0 0 15px #32CD32, 0 0 20px #32CD32;
     }
 
-    p {
-      font-size: 1.2em;
-      color: #ccc;
+    main {
+      max-width: 900px;
+      margin: 50px auto;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 30px;
+      border: 2px solid #32CD32;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+    }
+
+    section {
       margin-bottom: 30px;
     }
 
-    .ip-box {
-      display: inline-block;
-      background: #222;
-      padding: 15px 25px;
-      border-radius: 10px;
-      font-size: 1.2em;
-      margin-bottom: 20px;
-      box-shadow: 0 0 10px #4caf50;
+    h2 {
+      font-size: 20px;
+      color: #32CD32;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
     }
 
-    .buttons {
-      margin-top: 30px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-left: 20px;
     }
 
-    .buttons a {
-      padding: 14px 30px;
-      background: #4caf50;
-      border-radius: 8px;
-      text-decoration: none;
-      color: white;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    .buttons a:hover {
-      background: #45a045;
-      transform: scale(1.05);
+    ul li {
+      font-size: 16px;
+      margin-bottom: 10px;
+      color: #a0e100;
+      text-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
     }
 
     footer {
-      padding: 40px 20px;
-      font-size: 0.9em;
-      color: #888;
-      background: #101010;
-      margin-top: 60px;
+      text-align: center;
+      font-size: 14px;
+      color: #ccc;
+      margin-top: 50px;
     }
 
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 2.2em;
-      }
-      .ip-box {
-        font-size: 1em;
-      }
-      .buttons a {
-        padding: 12px 20px;
-        font-size: 0.95em;
-      }
+    .status-info {
+      font-size: 18px;
+      color: #32CD32;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+
+    .status-info span {
+      color: #a0e100;
+    }
+
+    .discord-btn {
+      display: inline-block;
+      background-color: #7289DA;
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    .discord-btn:hover {
+      background-color: #5b6eae;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Gufcio.pl</h1>
-    <p>Dołącz do najlepszego serwera Minecraft 1.21.5!</p>
-    <div class="ip-box">IP: <strong>mc.gufcio.pl</strong></div>
-
-    <div class="buttons">
-      <a href="https://discord.gg/1368302391681880105" target="_blank">Discord</a>
-      <a href="https://sklep.gufcio.pl" target="_blank">Sklep</a> <!-- Link do sklepu CraftingStore -->
-      <a href="https://topka.pl/gufcio" target="_blank">Głosuj</a>
-      <a href="/regulamin.html">Regulamin</a>
-    </div>
+    <h1>Arena PvP - Oficjalna Strona</h1>
   </header>
 
+  <main>
+    <section>
+      <h2>🔥 Najważniejsze Funkcje Serwera</h2>
+      <ul>
+        <li>✅ System rankingowy 1v1, 2v2, FFA</li>
+        <li>🏆 Topki graczy na stronie (ELO, wygrane, killstreak)</li>
+        <li>💬 Połączenie konta Minecraft z Discord</li>
+        <li>💰 System punktów i nagród za PvP</li>
+        <li>📊 Live status serwera i graczy online</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>📡 Status Serwera</h2>
+      <div class="status-info">
+        IP: <strong>mc.gufcio.pl</strong><br>
+        Status: <span>Online</span> | Graczy online: <strong>128</strong>
+      </div>
+    </section>
+
+    <section>
+      <h2>💬 Dołącz do nas na Discordzie!</h2>
+      <a href="https://discord.gg/your-invite-link" class="discord-btn" target="_blank">Dołącz do Discorda</a>
+    </section>
+  </main>
+
   <footer>
-    &copy; 2025 Gufcio.pl – Wszystkie prawa zastrzeżone.
+    &copy; 2025 Arena PvP. Wszelkie prawa zastrzeżone.
   </footer>
 </body>
 </html>
