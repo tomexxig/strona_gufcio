@@ -1,143 +1,221 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Arena PvP - Oficjalna Strona</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Roboto', sans-serif;
-      background: #1a1a1a;
-      color: #fff;
-      background-image: url('https://www.minecraftskins.com/uploads/skins/large/c-1697034748.jpg');
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nauka Driftu w Assetto Corsa</title>
+    <style>
+        /* Reset i podstawy */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    header {
-      background-color: rgba(0, 0, 0, 0.75);
-      padding: 20px 0;
-      text-align: center;
-      border-bottom: 3px solid #32CD32;
-      box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
-    }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0e0e0e;
+            color: #f0f0f0;
+            line-height: 1.8;
+        }
 
-    header h1 {
-      font-size: 28px;
-      color: #32CD32;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      text-shadow: 0 0 15px #32CD32, 0 0 20px #32CD32;
-    }
+        a {
+            color: #00ffe0;
+            text-decoration: none;
+        }
 
-    main {
-      max-width: 900px;
-      margin: 50px auto;
-      background-color: rgba(0, 0, 0, 0.7);
-      padding: 30px;
-      border: 2px solid #32CD32;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
-    }
+        a:hover {
+            text-decoration: underline;
+        }
 
-    section {
-      margin-bottom: 30px;
-    }
+        header {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            padding: 40px 20px;
+            text-align: center;
+            color: #fff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
 
-    h2 {
-      font-size: 20px;
-      color: #32CD32;
-      margin-bottom: 15px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
+        header h1 {
+            font-size: 2.8em;
+            color: #00ffe0;
+            text-shadow: 2px 2px #ff0040;
+        }
 
-    ul {
-      list-style: none;
-      padding: 0;
-      margin-left: 20px;
-    }
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+            color: #ccc;
+        }
 
-    ul li {
-      font-size: 16px;
-      margin-bottom: 10px;
-      color: #a0e100;
-      text-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
-    }
+        main {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+        }
 
-    footer {
-      text-align: center;
-      font-size: 14px;
-      color: #ccc;
-      margin-top: 50px;
-    }
+        section {
+            background: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 0 20px rgba(0, 255, 224, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
 
-    .status-info {
-      font-size: 18px;
-      color: #32CD32;
-      font-weight: bold;
-      margin-top: 15px;
-    }
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 40px rgba(0, 255, 224, 0.3);
+        }
 
-    .status-info span {
-      color: #a0e100;
-    }
+        h2 {
+            color: #00ffe0;
+            border-bottom: 2px solid #ff0040;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
 
-    .discord-btn {
-      display: inline-block;
-      background-color: #7289DA;
-      color: white;
-      padding: 12px 24px;
-      text-decoration: none;
-      border-radius: 5px;
-      font-size: 16px;
-      font-weight: bold;
-      margin-top: 20px;
-      transition: background-color 0.3s ease;
-    }
+        h3 {
+            color: #ff0040;
+            margin-top: 15px;
+        }
 
-    .discord-btn:hover {
-      background-color: #5b6eae;
-    }
-  </style>
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style-type: square;
+            margin-left: 20px;
+            color: #ccc;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        code {
+            background: #333;
+            padding: 4px 6px;
+            border-radius: 5px;
+            color: #00ffe0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #121212;
+            color: #777;
+            border-top: 1px solid #333;
+        }
+
+        /* Responsywność */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+
+            main {
+                padding: 15px;
+            }
+
+            section {
+                padding: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Arena PvP - Oficjalna Strona</h1>
-  </header>
+    <header>
+        <h1>Nauka Driftu w Assetto Corsa</h1>
+        <p>Od podstaw do mistrza – przewodnik krok po kroku</p>
+    </header>
 
-  <main>
-    <section>
-      <h2>🔥 Najważniejsze Funkcje Serwera</h2>
-      <ul>
-        <li>✅ System rankingowy 1v1, 2v2, FFA</li>
-        <li>🏆 Topki graczy na stronie (ELO, wygrane, killstreak)</li>
-        <li>💬 Połączenie konta Minecraft z Discord</li>
-        <li>💰 System punktów i nagród za PvP</li>
-        <li>📊 Live status serwera i graczy online</li>
-      </ul>
-    </section>
+    <main>
+        <section>
+            <h2>Krok 1: Podstawowe informacje – Czym jest drifting?</h2>
+            <p>
+                Drifting to technika jazdy, w której samochód porusza się w kontrolowanym poślizgu. 
+                Celem jest utrzymanie samochodu w bocznym poślizgu przez cały zakręt, zachowując kontrolę 
+                nad pojazdem. Drifting wywodzi się z Japonii, a dziś jest jedną z najpopularniejszych form jazdy w symulatorach takich jak Assetto Corsa.
+            </p>
+            <h3>Na czym polega?</h3>
+            <p>
+                Kluczowe elementy driftu:
+            </p>
+            <ul>
+                <li>Wprowadzenie auta w poślizg (gaz, sprzęgło lub ręczny)</li>
+                <li>Kontrola kąta poślizgu kontra kierownicą i gazem</li>
+                <li>Płynne przechodzenie między zakrętami („przejścia”)</li>
+            </ul>
 
-    <section>
-      <h2>📡 Status Serwera</h2>
-      <div class="status-info">
-        IP: <strong>mc.gufcio.pl</strong><br>
-        Status: <span>Online</span> | Graczy online: <strong>128</strong>
-      </div>
-    </section>
+            <h3>Jaki sprzęt kupić?</h3>
+            <p>
+                Żeby zacząć nie musisz mieć kierownicy! Możesz trenować nawet na:
+            </p>
+            <ul>
+                <li><b>Padzie</b> (np. Xbox/PS – w Twoim przypadku pad wypada wyśmienicie!)</li>
+                <li>Klawiaturze (ale to najtrudniejsza opcja)</li>
+            </ul>
+            <p>
+                Jeśli chcesz większego realizmu później:
+            </p>
+            <ul>
+                <li>Kierownica z force feedback (np. Logitech G29/G920, Thrustmaster T300)</li>
+                <li>Pedały ze sprzęgłem</li>
+                <li>Shifter + stelaż</li>
+            </ul>
+            <p>
+                <b>Na początek pad w zupełności wystarczy!</b>
+            </p>
+        </section>
 
-    <section>
-      <h2>💬 Dołącz do nas na Discordzie!</h2>
-      <a href="https://discord.gg/your-invite-link" class="discord-btn" target="_blank">Dołącz do Discorda</a>
-    </section>
-  </main>
+        <section>
+            <h2>Krok 2: Pierwsze kroki w Assetto Corsa</h2>
+            <ul>
+                <li>Wybierz tryb treningowy i auto RWD (tylny napęd).</li>
+                <li>Tor z szerokimi zakrętami (np. Touge, parking).</li>
+                <li>Obniż czułość sterowania w ustawieniach.</li>
+                <li>Ćwicz krótkie poślizgi w jednym zakręcie.</li>
+            </ul>
+        </section>
 
-  <footer>
-    &copy; 2025 Arena PvP. Wszelkie prawa zastrzeżone.
-  </footer>
+        <section>
+            <h2>Krok 3: Nauka przejść (Manji i Linking)</h2>
+            <p>
+                Opanuj pojedyncze zakręty, a potem ćwicz <b>manji</b> – balans auta z boku na bok na prostych.
+            </p>
+        </section>
+
+        <section>
+            <h2>Krok 4: Zaawansowane techniki</h2>
+            <ul>
+                <li><b>Clutch Kick</b> – szybkie wciśnięcie sprzęgła i gazu</li>
+                <li><b>Feint Drift</b> – zamach auta w przeciwną stronę przed zakrętem</li>
+                <li><b>Handbrake Entry</b> – wprowadzenie poślizgu ręcznym</li>
+            </ul>
+            <p>
+                Na padzie zamiast sprzęgła używaj subtelnych zmian gazu/hamulca.
+            </p>
+        </section>
+
+        <section>
+            <h2>Krok 5: Doskonalenie umiejętności</h2>
+            <p>
+                Trenuj na torach online, analizuj powtórki, testuj różne auta. Regularność to klucz.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 Nauka Driftu w Assetto Corsa – Twoja droga do sideways!
+    </footer>
 </body>
-</html>
+  </html>
+  
