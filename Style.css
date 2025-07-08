@@ -1,0 +1,146 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0a0a0a;
+    color: #f5f5f5;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    line-height: 1.8;
+    overflow-x: hidden;
+}
+
+/* Nagłówek */
+header {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    text-align: center;
+    padding: 50px 20px;
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 255, 224, 0.3);
+}
+
+header h1 {
+    font-size: 2.8em;
+    color: #00ffe0;
+    text-shadow: 0 0 10px #00ffe0, 0 0 20px #00ffe0, 0 0 30px #ff0040;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #ccc;
+}
+
+/* Menu na górze */
+nav {
+    background: #121212;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+nav a {
+    color: #00ffe0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+nav a:hover {
+    color: #ff0040;
+    text-shadow: 0 0 5px #ff0040, 0 0 10px #ff0040;
+}
+
+/* Sekcje */
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+section {
+    background: #1c1c1c;
+    border: 1px solid #333;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 0 20px rgba(0, 255, 224, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 0 40px rgba(255, 0, 64, 0.3);
+}
+
+h2 {
+    color: #00ffe0;
+    border-bottom: 2px solid #ff0040;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    text-shadow: 0 0 5px #00ffe0;
+}
+
+h3 {
+    color: #ff0040;
+    margin-top: 15px;
+    text-shadow: 0 0 5px #ff0040;
+}
+
+ul {
+    margin-left: 20px;
+    list-style-type: "🔥 ";
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+/* Przycisk */
+.btn {
+    display: inline-block;
+    background: #ff0040;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 0 10px #ff0040, 0 0 20px #ff0040;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+    background: #00ffe0;
+    box-shadow: 0 0 20px #00ffe0, 0 0 40px #00ffe0;
+    color: #121212;
+}
+
+/* Stopka */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #121212;
+    color: #888;
+    border-top: 1px solid #333;
+}
+
+/* Responsywność */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
